@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: holygrail
+application:
+  security:
+    secret-key: 3MP8Xi8ExjXcPHbOO3wWLRHJDGqwK6XV #TODO NEED TO UPDATE
+    jwt-ttl: 300000 # 5 minutes
