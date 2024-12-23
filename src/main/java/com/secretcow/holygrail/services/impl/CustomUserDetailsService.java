@@ -1,4 +1,4 @@
-package com.secretcow.holygrail.services;
+package com.secretcow.holygrail.services.impl;
 
 import com.secretcow.holygrail.entities.UserDetail;
 import com.secretcow.holygrail.repositories.UserRepository;
@@ -9,10 +9,10 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserServiceImpl implements UserDetailsService {
+public class CustomUserDetailsService implements UserDetailsService {
     private final UserRepository userRepository;
 
-    public UserServiceImpl(UserRepository userRepository) {
+    public CustomUserDetailsService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
